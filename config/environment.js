@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'forum-app',
     environment: environment,
+    firebase: 'glowing-fire-8249.firebaseIO.com',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

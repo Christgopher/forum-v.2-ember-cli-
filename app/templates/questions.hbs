@@ -1,0 +1,8 @@
+<h1>Questions</h1>
+
+{{#each question in model}}
+  <li>{{#link-to 'question' question}}{{question.question}} Asked by {{question.author}}{{/link-to}}</li>
+{{/each}}
+
+{{#link-to 'new-question' classNames="btn btn-primary"}}New question{{/link-to}}
+{{outlet}}
