@@ -2,17 +2,17 @@
   <form>
     <div class="form-group">
       <label for="question">Question</label>
-      {{input value=question id="question" class="form-control"}}
+      {{input value=question id="question" class="form-control" placeholder=model.question}}
     </div>
 
     <div class="form-group">
       <label for="author">Author</label>
-      {{input value=author id="author" class="form-control"}}
+      {{input value=author id="author" class="form-control" placeholder=model.author}}
     </div>
 
     <div class="form-group">
       <label for="description">Description</label>
-      {{textarea value=description id="description" class="form-control" rows="5"}}
+      {{textarea value=description id="description" class="form-control" rows="5" placeholder=model.description}}
     </div>
 
     <button class="btn btn-primary" {{action 'save'}}>Save</button>
