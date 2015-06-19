@@ -11,7 +11,7 @@ export default Ember.Controller.extend({
       var author = this.get('author');
       var question = this.get('question');
 
-      var question_id = this.get('model.id')
+      var question_id = this.get('model.id');
 
       this.store.find('question', question_id).then(function (newQuestion) {
         newQuestion.get('author');
