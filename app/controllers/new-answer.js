@@ -4,8 +4,11 @@ export default Ember.Controller.extend({
   needs: ['question'],
   actions: {
     save: function() {
+      var timeCreated = new Date();
+
       var newAnswer = this.store.createRecord('answer', {
         text: this.get('text'),
+        timeCreated: timeCreated
       });
       newAnswer.save();
 

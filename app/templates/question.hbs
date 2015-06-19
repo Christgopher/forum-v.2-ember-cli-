@@ -32,8 +32,7 @@
 <div class="sml-title">Answers</div>
 {{#each answer in model.answers}}
   <p>
-    {{answer.text}}
-    <button class="btn btn-xs btn-danger" {{action 'delete'}}>x</button>
+    {{answer.text}}{{answer.timeCreated}}
   </p>
 {{/each}}
 
