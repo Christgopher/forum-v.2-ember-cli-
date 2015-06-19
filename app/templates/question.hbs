@@ -19,7 +19,7 @@
   </form>
 {{else}}
   <div id="descriptors">
-    <div class="sml-title"><p>{{model.question}} Asked by {{model.author}}</p></div>
+    <div class="sml-title"><p>{{model.question}}<div class="author"> Asked by {{model.author}}</div></p></div>
 
     <div id="description"><p>{{model.description}}</p></div>
   </div>
@@ -28,13 +28,15 @@
   <button class="btn btn-s btn-danger" {{action 'delete'}}>Delete</button>
 {{/if}}
 {{outlet}}
-
-<div class="sml-title">Answers</div>
-{{#each answer in model.answers}}
-  <p>
-    {{answer.text}}{{answer.timeCreated}}
-  </p>
-{{/each}}
+<br>
+<br>
+<div class="answers">
+    {{#each answer in model.answers}}
+      <p>
+        {{answer.text}} <div class="author">Posted at {{answer.timeCreated}}</div>
+      </p>
+    {{/each}}
+</div>
 
 <br>
 <br>

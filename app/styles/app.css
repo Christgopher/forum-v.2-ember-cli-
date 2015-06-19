@@ -1,0 +1,55 @@
+.title {
+    padding: 10px;
+    font-weight: bold;
+    font-family: Tahoma, Geneva, sans-serif;
+    padding-bottom: 30px;
+}
+
+#top {
+    position: absolute;
+    top: 0px;
+    background-color: #00FFFF;
+    width: 100%;
+    height: 70px;
+
+    border-bottom: solid thick;
+}
+
+#mainBody {
+    position: absolute;
+    top: 70px;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.question {
+    padding: 10px;
+    font-size: 17px;
+}
+
+.author {
+    opacity: 0.5;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+#descriptors {
+    padding: 25px;
+    font-weight: bold;
+    font-family: Tahoma, Geneva, sans-serif;
+    padding-left: 100px;
+    font-size: 30px;
+}
+
+#description {
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.answers {
+    padding: 20px;
+    
+}
